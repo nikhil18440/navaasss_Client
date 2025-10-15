@@ -6,25 +6,54 @@ export default function PeopleList() {
   const [people] = useState([
     {
       id: 1,
-      name: "Anita Varma",
-      role: "Product Designer",
-      bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
-      img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&q=60",
+      name: "Soumya",
+      role: "Captain",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "soumya.jpg",
     },
     {
       id: 2,
-      name: "Rahul Menon",
-      role: "Frontend Engineer",
-      bio: "React enthusiast, part-time guitarist, builds pixel-perfect UI.",
-      img: "https://images.unsplash.com/photo-1545996124-1e0d9b3b1d7a?w=800&auto=format&fit=crop&q=60",
+      name: "Vivek",
+      role: "Vice captain",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "vivek.jpg",
     },
     {
       id: 3,
-      name: "Maya Nair",
-      role: "Marketing",
-      bio: "Storyteller, coffee lover, and growth-hacking experimenter.",
-      img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=800&auto=format&fit=crop&q=60",
+      name: "Anusyuudh",
+      role: "Member",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "anusyuudh.png",
     },
+    {
+      id: 4,
+      name: "Shreya",
+      role: "Member",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "shreya.jpg",
+    },
+    {
+      id: 5,
+      name: "sreelakshmi",
+      role: "Member",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "sreelakshmi.jpg",
+    },
+    {
+      id: 6,
+      name: "Anly anders",
+      role: "Member",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "soumya.jpg",
+    },
+    {
+      id: 7,
+      name: "Anita Varma",
+      role: "Product Designer",
+      bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "soumya.jpg",
+    },
+    
   ]);
 
   const [selected, setSelected] = useState(null);

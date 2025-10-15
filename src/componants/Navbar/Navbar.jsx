@@ -16,10 +16,10 @@ function Navbar() {
       </div>
 
       <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-        <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-        <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-        <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
-        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+        <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
+        <li><a href="/people" onClick={() => setMenuOpen(false)}>Members</a></li>
+        {/* <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li> */}
+        {/* <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li> */}
       </ul>
     </nav>
   );
