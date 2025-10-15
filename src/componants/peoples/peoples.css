@@ -1,0 +1,193 @@
+/* File: PeopleList.css */
+
+/* Root container */
+.people-list-root {
+  min-height: 100vh;
+  background-color: #f7fafc; /* light gray */
+  padding: 1rem;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #1f2937;
+}
+
+/* Header */
+.people-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.people-header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.people-header p {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+/* Grid of avatars */
+.people-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.people-grid li { display: block; }
+
+@media (min-width: 640px) {
+  .people-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .people-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.person-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.person-avatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+  border: 1px solid rgba(0,0,0,0.04);
+  display: inline-block;
+}
+.person-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 200ms ease;
+}
+.person-btn:focus .person-avatar,
+.person-btn:hover .person-avatar {
+  transform: translateY(-2px);
+}
+
+.person-name {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.person-role {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+/* Modal backdrop and wrapper */
+.modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* Modal card (mobile: bottom sheet; desktop: centered card) */
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 1rem 1rem 1rem;
+  background: #ffffff;
+  border-radius: 12px 12px 8px 8px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.2);
+  overflow: hidden;
+  transform-origin: bottom center;
+}
+
+@media (min-width: 640px) {
+  .modal-root {
+    align-items: center;
+  }
+  .modal-card {
+    border-radius: 12px;
+    margin: 0 1rem;
+  }
+}
+
+.modal-inner {
+  padding: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+.modal-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.modal-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.modal-content h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.modal-content p.role {
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+.modal-content p.bio {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  color: #4b5563;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  border: 1px solid rgba(0,0,0,0.07);
+  background: transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.modal-footer {
+  border-top: 1px solid #eef2f7;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* Small utility */
+.visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px); white-space: nowrap; }
