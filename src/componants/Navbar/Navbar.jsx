@@ -6,6 +6,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+        <img src="navas_logo2.jpg" alt="Navaasss Logo" className="nav-logo-image" />
       <div className="nav-logo">Navaasss</div>
 
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

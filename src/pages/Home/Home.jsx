@@ -200,16 +200,16 @@ export default function Home() {
 
   return (
     <div className="workshop-app">
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="logo">
-          {/* <span className="mark" aria-hidden /> */}
+          <span className="mark" aria-hidden />
           <div>
             <div className="title">Navaasss</div>
             <div className="nav-actions">Workshop · 3 days</div>
           </div>
         </div>
         <div className="nav-actions">Group profiles · Upload reports</div>
-      </nav>
+      </nav> */}
 
       <header className="hero">
         <div>
