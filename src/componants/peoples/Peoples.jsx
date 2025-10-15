@@ -44,14 +44,14 @@ export default function PeopleList() {
       name: "Anly anders",
       role: "Member",
     //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
-      img: "soumya.jpg",
+      img: "anly.jpg",
     },
     {
       id: 7,
-      name: "Anita Varma",
-      role: "Product Designer",
-      bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
-      img: "soumya.jpg",
+      name: "Nikhil",
+      role: "Member",
+    //   bio: "Loves minimal design, sustainable materials, and long walks with sketchbook.",
+      img: "nikhil.jpg",
     },
     
   ]);
